@@ -2,7 +2,9 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Body from "./Components/Body/Body";
 import React, { useState, useEffect, useMemo } from "react";
+
 import images from "./data/Data";
+import Footer from "./Components/Footer/Footer";
 // const images=[defaultt,snow,mist,rain,showr,thunder,fewCloud,brokenCloud,clearSky,scatterd
 // ]
 function App() {
@@ -43,6 +45,11 @@ function App() {
       case "mist":
         setBackGroud(images[2]);
         break;
+      case 'light snow':
+        setBackGroud(images[11])
+        break;
+      case 'overcast cloud':
+        setBackGroud(images[10])
       default:
         setBackGroud(images[0]);
     }
@@ -71,7 +78,7 @@ function App() {
     
     setToggle(true);
   }
-  function x(e) {
+  function x() {
     FetchData().catch(() => {
       setToggle(false);
     });
@@ -83,6 +90,7 @@ function App() {
         <img className='imaggg' src={backGround}  />
         <Header  handleInput={handleInput} FetchData={x} />
         <Body apiData={apiData} toggle={toggle} input={input}/>
+        <Footer/>
       </div>
     
   );

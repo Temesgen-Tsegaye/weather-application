@@ -6,28 +6,31 @@ import React, { Component } from 'react';
 
 const Header = ({ handleInput, FetchData }) => {
     
-  useEffect(() => {
-    const keyhandler = (e) => {
-    console.log(e)
-      if (e.keyCode==13) {
-        FetchData();
-      }
-      console.log(e.key)
+  // useEffect(() => {
+  //   const keyhandler = (e) => {
+  //   console.log(e)
+  //     if (e.keyCode==13) {
+  //       FetchData();
+  //     }
+  //     console.log(e.key)
 
       
-    };
-    document.addEventListener("keydown", (e)=>keyhandler(e));
+  //   };
+  //   document.addEventListener("keydown", (e)=>keyhandler(e));
     
-      return () => {
-        document.removeEventListener("keydown", (e)=>keyhandler(e));
-      };
-  }, []);
+  //     return () => {
+  //       document.removeEventListener("keydown", (e)=>keyhandler(e));
+  //     };
+  // }, []);
 
   return (
     <div className={styles.Header}>
       <p>Weather App</p>
       <div>
-        <input
+        <input onKeyDown={(e)=>{
+          if(e.key=='Enter'){
+          
+            FetchData()}}}
          
           onChange={(e) => {
             handleInput(e);

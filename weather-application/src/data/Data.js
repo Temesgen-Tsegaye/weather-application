@@ -8,6 +8,8 @@ import fewCloud from '../images/few cloud.jpg'
 import defaultt from '../images/default.jpg'
 import clearSky from '../images/clear sky.jpg'
 import brokenCloud from '../images/broken cloud.jpg'
+import overcast from '../images/overcast cloud.jpg'
+import lightSnow from '../images/light snow.jpg'
 const images=[defaultt,snow,mist,rain,showr,thunder,fewCloud,brokenCloud,clearSky,scatterd
-]
+,overcast,lightSnow]
 export default images

@@ -4,7 +4,7 @@
 .container{
     width: 30%;
     height: 90%;
-    border-style: solid;
+    
     margin-left: 5vw;
     padding: 2rem;
     border-radius: 10px;
@@ -13,7 +13,7 @@
     animation-fill-mode: forwards;
     animation-direction: normal;
     animation-timing-function: linear;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 @keyframes err {
     from{

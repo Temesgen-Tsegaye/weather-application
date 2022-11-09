@@ -32,11 +32,11 @@
     font-weight: 600;
     text-align: center;
     padding-top:5rem;
-    animation-name: err;
+     animation-name: err;
     animation-fill-mode: forwards;
     animation-direction: normal;
     animation-timing-function: linear;
-    animation-duration:0.5s;
+    animation-duration:1s; 
     
 }
 
@@ -48,4 +48,4 @@
         transform: scale(1) rotateY(360deg);
     }
     
-}
+} 

@@ -10,10 +10,10 @@ const Result=({apiData})=>{
              <img src={`http://openweathermap.org/img/w/${apiData.icon}.png`} alt="icon" />
 
             </div>
-            <p className={styles.b}>fellslike: { apiData.Feels_like}</p>
-            <p className={styles.b}>wind: {apiData.wind}</p>
-            <p className={styles.b}>temprature:{apiData.temprature}</p>
-            <p className={styles.b}>pressure:{apiData.pressure}</p>
+            <p className={styles.b}>fellslike: { apiData.Feels_like}°C</p>
+            <p className={styles.b}>wind: {apiData.wind}m/s</p>
+            <p className={styles.b}>temprature:{apiData.Temprature}°C</p>
+            <p className={styles.b}>pressure:{apiData.pressure}hPa</p>
 
            
             
