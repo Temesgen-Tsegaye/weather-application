@@ -1,0 +1,85 @@
+.Header{
+    background-color: rgba(2,2,2,0.5);
+    height:15vh;
+    display: flex;
+    justify-content:space-around;
+       align-items: center;
+    padding: 1rem;
+/* position: fixed; */
+    width: 100%;
+   
+    animation-name: head;
+    animation-duration:0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+}
+@keyframes content {
+   from{
+       transform: scale(0);
+   }
+   to{
+       transform: scale(1);
+   }
+    
+}
+@keyframes head {
+    from{
+        margin-left: 100%;
+        transform: scale(0) rotateX(0deg);
+      
+    }
+    to{
+        transform:scale(1) rotateX(360deg);
+       
+    }
+    
+}
+
+.Header>p{
+    font-size: 2.5rem;
+    color: white;
+    animation-name: content;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    /* animation-delay:2s; */
+
+}
+.Header>div>input{
+   border-width: 0px 0px 2px 0px;
+   background-color:inherit;
+   border-color: ivory;
+   color: white;
+   font-size: 1rem;
+   font-weight: 100;
+   width:15vw;
+   animation-name: content;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    
+
+}
+
+.Header>div>button{
+    margin-left: 1rem;
+    animation-name: content;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+   
+
+}
+.icons{
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
