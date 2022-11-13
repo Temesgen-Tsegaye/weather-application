@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Body from "./Components/Body/Body";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo,useLayoutEffect} from "react";
 
 import images from "./data/Data";
 import Footer from "./Components/Footer/Footer";
@@ -14,7 +14,7 @@ function App() {
   const [backGround, setBackGroud] = useState(images[0]);
 
   let description = apiData.description;
-  useEffect(() => {
+  useLayoutEffect(() => {
     switch (description) {
       case "clear sky":
         setBackGroud(images[8]);
@@ -48,8 +48,9 @@ function App() {
       case 'light snow':
         setBackGroud(images[11])
         break;
-      case 'overcast cloud':
+      case 'overcast clouds':
         setBackGroud(images[10])
+        break;
       default:
         setBackGroud(images[0]);
     }
